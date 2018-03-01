@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title>Test app</title>
+</head>
+
+<body>
+	<form action="/app/getdata" method="POST">
+		{% csrf_token %}
+		<label>Start</label><input type="text" name="start"/>  <br />
+		<label>Stop</label><input type="text" name="stop"/>  <br />
+		<input type="submit" name="submit" value="Submit"/>
+	</form>
+</body>
+
+</html>
